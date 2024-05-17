@@ -2,7 +2,8 @@
 .lite_workspace.lua
 
 # Neutralinojs binaries and builds
-/dist
+*/dist
+*/node_modules
 
 # Neutralinojs client (minified)
 

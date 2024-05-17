@@ -64,7 +64,7 @@
     "frontendLibrary": {
       "patchFile": "/leetcode/index.html",
       "devUrl": "http://localhost:5173",
-      "projectPath": "/leetcode/",
+      "projectPath": "/packages/",
       "initCommand": "pnpm install",
       "devCommand": "pnpm dev",
       "buildCommand": "pnpm build"
