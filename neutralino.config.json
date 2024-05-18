@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "defaultMode": "window",
   "port": 0,
-  "documentRoot": "/leetcode/dist/",
+  "documentRoot": "/packages/dist/",
   "url": "/",
   "enableServer": true,
   "enableNativeAPI": true,
@@ -59,11 +59,11 @@
   },
   "cli": {
     "binaryName": "codeApp",
-    "resourcesPath": "/leetcode/dist/",
+    "resourcesPath": "/packages/dist/",
     "extensionsPath": "/extensions/",
     "frontendLibrary": {
-      "patchFile": "/leetcode/index.html",
-      "devUrl": "http://localhost:5173",
+      "patchFile": "/packages/home/index.html",
+      "devUrl": "http://localhost:5173/home/index",
       "projectPath": "/packages/",
       "initCommand": "pnpm install",
       "devCommand": "pnpm dev",

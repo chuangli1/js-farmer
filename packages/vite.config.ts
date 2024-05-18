@@ -4,19 +4,26 @@ import path from "node:path";
 import { defineConfig } from "vite";
 import vue from "@vitejs/plugin-vue";
 import vueJsx from "@vitejs/plugin-vue-jsx";
+import Component from "unplugin-vue-components/vite";
+import RadixVueResolver from "radix-vue/resolver";
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [vue(), vueJsx()],
+  plugins: [
+    vue(),
+    vueJsx(),
+    Component({ dts: true, resolvers: [RadixVueResolver()] }),
+  ],
   resolve: {
     alias: {
-      "@leetcode": fileURLToPath(new URL("./leetcode/src", import.meta.url)),
+      "@common": fileURLToPath(new URL("./common", import.meta.url)),
     },
   },
   build: {
     rollupOptions: {
       input: {
-        leetcode: path.resolve(__dirname, "./leetcode/index.html"),
+        app_store: path.resolve(__dirname, "./store/index.html"),
+        home: path.resolve(__dirname, "./home/index.html"),
       },
     },
   },

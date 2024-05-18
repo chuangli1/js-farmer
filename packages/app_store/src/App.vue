@@ -1,8 +1,7 @@
 <script setup lang="ts">
 import { RouterLink, RouterView } from 'vue-router'
 import HelloWorld from './components/HelloWorld.vue'
-import { init, os } from '@neutralinojs/lib'
-init()
+import {  os } from '@neutralinojs/lib'
 const testPending = () => {
   os
   .showMessageBox('Confirm', 'Are you sure you want to quit?', 'YES_NO', 'QUESTION')
@@ -17,13 +16,10 @@ const testPending = () => {
 
 <template>
   <header>
-    <img alt="Vue logo" class="logo" src="@leetcode/assets/logo.svg" width="125" height="125" @click="testPending"/>
     <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-
       <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
+        <RouterLink to="/">Home1234</RouterLink>
+        <RouterLink to="/about">About1234</RouterLink>
       </nav>
     </div>
   </header>
