@@ -26,9 +26,9 @@
     "window": {
       "title": "codeApp1",
       "width": 800,
-      "height": 500,
+      "height": 1000,
       "minWidth": 400,
-      "minHeight": 200,
+      "minHeight": 800,
       "center": true,
       "fullScreen": false,
       "alwaysOnTop": false,

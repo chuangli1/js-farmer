@@ -1,23 +1,53 @@
 <script setup lang="ts">
 import { RouterLink, RouterView } from 'vue-router'
 import HelloWorld from './components/HelloWorld.vue'
-import { os } from '@neutralinojs/lib'
-const testPending = () => {
-  os
-  .showMessageBox('Confirm', 'Are you sure you want to quit?', 'YES_NO', 'QUESTION')
-  .then((res: string) => {
-    if (res == 'YES') {
-      Neutralino.app.exit()
-    }
-  })
-  
-}
+import { Button } from '@/components/components/ui/button'
+import {ref} from 'vue'
+import Nav, {type LinkProp} from '@components/Nav.vue'
+const isCollapsed = ref(false)
+const links2: LinkProp[] = [
+  {
+    title: 'Social',
+    label: '972',
+    icon: 'lucide:user-2',
+    variant: 'ghost',
+  },
+  {
+    title: 'Updates',
+    label: '342',
+    icon: 'lucide:alert-circle',
+    variant: 'ghost',
+  },
+  {
+    title: 'Forums',
+    label: '128',
+    icon: 'lucide:message-square',
+    variant: 'ghost',
+  },
+  {
+    title: 'Shopping',
+    label: '8',
+    icon: 'lucide:shopping-cart',
+    variant: 'ghost',
+  },
+  {
+    title: 'Promotions',
+    label: '21',
+    icon: 'lucide:archive',
+    variant: 'ghost',
+  },
+]
+
 </script>
 
 <template>
   <header>
     <div class="wrapper">
-      <HelloWorld msg="You did it!" />
+      <Button>你属</Button>
+       <Nav
+          :is-collapsed="isCollapsed"
+          :links="links2"
+        />
       <a href="/app_store/index">你好呀</a>
 
       <nav>

@@ -17,6 +17,10 @@ export default defineConfig({
   resolve: {
     alias: {
       "@common": fileURLToPath(new URL("./common", import.meta.url)),
+      "@": fileURLToPath(new URL(".", import.meta.url)),
+      "@components": fileURLToPath(
+        new URL("./components/real", import.meta.url)
+      ),
     },
   },
   build: {
