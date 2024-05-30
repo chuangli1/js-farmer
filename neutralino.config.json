@@ -1,11 +1,11 @@
 {
   "$schema": "https://raw.githubusercontent.com/neutralinojs/neutralinojs/main/schemas/neutralino.config.schema.json",
-  "applicationId": "js.neutralino.sample",
-  "version": "1.0.0",
+  "applicationId": "js.neutralino.bof",
+  "version": "10.0.1",
   "defaultMode": "window",
   "port": 0,
   "documentRoot": "/packages/dist/",
-  "url": "/",
+  "url": "/home/",
   "enableServer": true,
   "enableNativeAPI": true,
   "tokenSecurity": "once",
@@ -24,7 +24,7 @@
   },
   "modes": {
     "window": {
-      "title": "codeApp1",
+      "title": "Best of Front",
       "width": 800,
       "height": 1000,
       "minWidth": 400,
@@ -58,7 +58,7 @@
     }
   },
   "cli": {
-    "binaryName": "codeApp",
+    "binaryName": "bof",
     "resourcesPath": "/packages/dist/",
     "extensionsPath": "/extensions/",
     "frontendLibrary": {
@@ -74,7 +74,7 @@
   },
   "buildScript": {
     "mac": {
-      "architecture": ["x64", "arm64", "universal"],
+      "architecture": ["x64 arm64"],
       "minimumOS": "10.13.0",
       "appName": "ExtBunDemo",
       "appBundleName": "ExtBunDemo",

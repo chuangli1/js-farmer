@@ -10,3 +10,5 @@
 # Neutralinojs related files
 .storage
 *.log
+**/dist
+dist/*

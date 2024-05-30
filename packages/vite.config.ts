@@ -26,7 +26,7 @@ export default defineConfig({
   build: {
     rollupOptions: {
       input: {
-        app_store: path.resolve(__dirname, "./store/index.html"),
+        app_store: path.resolve(__dirname, "./app_store/index.html"),
         home: path.resolve(__dirname, "./home/index.html"),
       },
     },
